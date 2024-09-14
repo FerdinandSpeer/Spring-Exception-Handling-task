@@ -27,6 +27,6 @@ public class AnimalController {
     @ExceptionHandler(NoSuchElementException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ErrorMessage handleNoSuchElementException(NoSuchElementException e) {
-        return new ErrorMessage("NOT FOUND", Instant.now());
+        return new ErrorMessage("ECHT KEIN ANIMAL GEFUNDEN", Instant.now());
     }
 }
